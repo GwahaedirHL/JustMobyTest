@@ -11,8 +11,8 @@ namespace Game.Serialization
         [SerializeField]
         AssetReferenceSprite spriteRef;
 
-        [SerializeReference, SelectType(typeof(GoldCoin))]
-        IItem item;
+        [SerializeField]
+        ItemType itemID;
 
         public AssetReferenceSprite SpriteRef => spriteRef;
     }

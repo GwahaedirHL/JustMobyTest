@@ -14,7 +14,7 @@ namespace Game.UI
         TextCollection textCollection;
 
         [SerializeField]
-        ImageRefsCollection imageKeysCollection;
+        ImageRefsCollection imageKeysCollection;        
 
         public BuyResourcesPopupModel CreateDummyModel(int itemsCount) 
         {
@@ -33,6 +33,7 @@ namespace Game.UI
             var cost = random.Next(100, 1000);
             var discount = random.Next(100);
             discount = discount > 50 ? 0 : discount;
+
             return new BuyResourcesPopupModel(cost, discount)
             {
                 DescriptionText = description,

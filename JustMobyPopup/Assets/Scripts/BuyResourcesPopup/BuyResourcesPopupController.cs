@@ -1,21 +1,23 @@
 ﻿using AssetOperations;
 using Cysharp.Threading.Tasks;
+using System.Threading;
+using UnityEngine;
 
 namespace Game.Popups
 {
     public class BuyResourcesPopupController
     {
         BuyResourcesPopupModel model;
-        BuyResorcesPopupView view;
+        BuyResorcesPopupView view;        
 
         public BuyResourcesPopupController(BuyResourcesPopupModel model)
         {
-            this.model = model;
+            this.model = model;           
         }
 
-        public async UniTask ShowPopupAsync()
+        public async UniTask ShowPopupAsync(CancellationToken cancellationToken)
         {
-            var operationResult = await SceneController.Inst.LoadPopupAsync<BuyResorcesPopupView>(model);
+            var operationResult = await SceneController.Inst.LoadPopupAsync<BuyResorcesPopupView>(model, cancellationToken);
             if (operationResult.Status != LoadOperationStatus.Succeeded)
                 return;
 
@@ -27,7 +29,7 @@ namespace Game.Popups
 
         void OnBuyClick()
         {
-            model.Buy();
+            Debug.Log("Purchased");
             view.Close();
         }       
     }

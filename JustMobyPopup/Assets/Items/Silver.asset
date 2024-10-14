@@ -17,9 +17,4 @@ MonoBehaviour:
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
-  item:
-    id: 0
-  references:
-    version: 1
-    00000000:
-      type: {class: Silver, ns: Game.Items, asm: Assembly-CSharp}
+  itemID: 3

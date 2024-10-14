@@ -32,6 +32,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 420fe85cdcefce540b8b4b6e575c2e68
+    m_Address: Assets/Prefabs/OfferData.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 454a03b581cde9d4c9d05ef2b5ad8a5e
     m_Address: Assets/Sprites/Sack.png
     m_ReadOnly: 0

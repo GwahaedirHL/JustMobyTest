@@ -1,18 +1,19 @@
-﻿namespace Game.Popups
+﻿using System;
+
+namespace Game.Popups
 {
+    [Serializable]
     public struct PriceData
     {
-        public readonly float FullCost;
-        public readonly float DiscountCost;
-        public readonly int Discount;
-        public readonly bool HasDiscount;
+        public float FullCost;
+        public int Discount;
+        public readonly float DiscountCost => (float)Math.Round(FullCost - (FullCost * Discount / 100), 2);
+        public readonly bool HasDiscount => Discount > 0;
 
         public PriceData(float fullCost, int discount)
         {
             FullCost = fullCost;
             Discount = discount;
-            DiscountCost = fullCost - (fullCost * discount / 100);
-            HasDiscount = discount > 0;
         }
     }
 }

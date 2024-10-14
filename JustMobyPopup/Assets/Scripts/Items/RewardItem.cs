@@ -6,10 +6,12 @@ using UnityEngine.AddressableAssets;
 
 namespace Game.Items
 {
+    [Serializable]
     public struct RewardItem
     {
-        public readonly ItemData ItemData;
-        public readonly int Count;
+        [SerializeField]
+        public ItemData ItemData;
+        public int Count;
 
         public RewardItem(ItemData itemData, int count)
         {

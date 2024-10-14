@@ -1,4 +1,5 @@
 ﻿using Game.Items;
+using Game.Popups;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 
@@ -8,15 +9,24 @@ namespace Game.Serialization
     public class OfferData : ScriptableObject
     {
         [SerializeField]
+        string headerText;
+
+        [SerializeField]
+        string descriptionText;
+
+        [SerializeField]
         RewardItem[] rewardItems;
 
-        [SerializeReference]
-        AssetReference offerImage;
+        [SerializeField]
+        AssetReferenceSprite imageRef;
 
         [SerializeField]
-        float fullPrice;
+        PriceData priceData;
 
-        [SerializeField]
-        int discount;
+        public string HeaderText => headerText;
+        public string DescriptionText => descriptionText;
+        public RewardItem[] RewardItems => rewardItems;
+        public AssetReferenceSprite ImageRef => imageRef;
+        public PriceData PriceData => priceData;
     }
 }

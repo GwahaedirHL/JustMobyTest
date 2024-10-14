@@ -20,6 +20,9 @@ namespace Game.Popups
         PurchaseButtonView purchaseButton;
 
         [SerializeField]
+        Button closeButton;
+
+        [SerializeField]
         DoubleRowLayout itemsLayout;
 
         [SerializeField]
@@ -37,6 +40,7 @@ namespace Game.Popups
             this.descriptionText.text = descriptionText;
             offerImage.sprite = offerSprite;
             await itemsLayout.Init(items);
+            closeButton.onClick.AddListener(Close);
             purchaseButton.OnClick.AddListener(() => Buy?.Invoke());
             purchaseButton.Draw(priceData);
             gameObject.SetActive(true);

@@ -1,5 +1,5 @@
 ﻿using Game.Items;
-using UnityEngine;
+using Game.Serialization;
 using UnityEngine.AddressableAssets;
 
 namespace Game.Popups
@@ -23,9 +23,13 @@ namespace Game.Popups
             priceData = new PriceData(cost, discount);
         }
 
-        public void Buy()
+        public BuyResourcesPopupModel(OfferData data)
         {
-            Debug.Log("Purchased");
+            Rewards = data.RewardItems;
+            ImageRef = data.ImageRef;
+            DescriptionText = data.DescriptionText;
+            HeaderText = data.HeaderText;
+            priceData = data.PriceData;
         }
     }
 }
