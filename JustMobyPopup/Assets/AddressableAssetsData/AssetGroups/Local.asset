@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Local
+  m_EditorClassIdentifier: 
+  m_GroupName: Local
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 190a46a86c5ff8540a33faf45a244daa
+  m_SerializeEntries:
+  - m_GUID: 0d32408b66400ad4ba70147887776d9c
+    m_Address: Assets/Sprites/Chest.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1d4350647edb2f444b2bfa38524cf880
+    m_Address: Assets/Prefabs/OfferView.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2cda990e2423bbf4892e6590ba056729
+    m_Address: Assets/Scenes/SampleScene.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 454a03b581cde9d4c9d05ef2b5ad8a5e
+    m_Address: Assets/Sprites/Sack.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 54310fc1c16094444a68d311394b8bf6
+    m_Address: Assets/Collections
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 58a7b4015091d214fb68773e9b34dc12
+    m_Address: Assets/Sprites/items
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a1af71101eca4e745bf9c65400927b7c
+    m_Address: Assets/Prefabs/ResourceViewTamplate.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d09ca48edc3ce004ca4fa92a5b2fb5ec
+    m_Address: Assets/Sprites/backgrounds
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 5686d0a333689404fac647812a2b861e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 3af97f942fb763445bc0e91eea9f2b96, type: 2}
+    - {fileID: 11400000, guid: 7bc9156cba6a2d0429b2944e7b5a62df, type: 2}
