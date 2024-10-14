@@ -24,7 +24,7 @@ namespace Game.Popups
         Button button;
 
         const string discountFormat = "-{0}%";
-        const string priceFormat = "{0}$";
+        const string priceFormat = "${0}";
         public ButtonClickedEvent OnClick => button.onClick;
 
         public void Draw(PriceData priceData)
